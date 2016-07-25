@@ -1,0 +1,8 @@
+﻿<ResourceDictionary x:Class="UWP.LIB.Controls.Button.ButtonTemplate"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:button="using:UWP.LIB.Controls.Button">
+    <DataTemplate x:Key="ApiButton" x:DataType="button:ButtonViewModel">
+        <Button Command="{x:Bind OnClickCommand}" />
+    </DataTemplate>
+</ResourceDictionary>
