@@ -2,12 +2,16 @@
 
 namespace UWP.LIB.Controls.Button
 {
-    public class ButtonViewModel : ViewModelBase
+    public class ButtonViewModel : ViewModelBase, IControlviewModel
     {
         public IButtonApiModel ButtonApiModel { get; set; }
         public ICommand OnClickCommand { get; set; }
 
-        public ButtonViewModel(IButtonApiModel buttonApiModel)
+        public ButtonViewModel(): this(new ButtonApiModel())
+        {
+        }
+
+        internal ButtonViewModel(IButtonApiModel buttonApiModel)
         {
             ButtonApiModel = buttonApiModel;
             OnClickCommand = new DelegateCommand(OnClick, OnCanClick);

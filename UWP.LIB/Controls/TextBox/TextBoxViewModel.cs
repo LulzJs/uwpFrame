@@ -1,11 +1,15 @@
 ﻿
 namespace UWP.LIB.Controls.TextBox
 {
-    public class TextBoxViewModel : ViewModelBase
+    public class TextBoxViewModel : ViewModelBase, IControlviewModel
     {
         private string text;
 
-        public TextBoxViewModel(ITextBoxApiModel buttonApiModel)
+        public TextBoxViewModel(): this(new TextBoxApiModel())
+        {
+        }
+
+        internal TextBoxViewModel(ITextBoxApiModel buttonApiModel)
         {
             ButtonApiModel = buttonApiModel;
         }

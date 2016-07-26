@@ -116,6 +116,7 @@
       <DependentUpon>Controls.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Button\IButtonApiModel.cs" />
+    <Compile Include="Controls\IControlviewModel.cs" />
     <Compile Include="Controls\TextBox\TextBoxApiModel.cs" />
     <Compile Include="Controls\TextBox\TextBoxTemplate.xaml.cs">
       <DependentUpon>TextBoxTemplate.xaml</DependentUpon>
