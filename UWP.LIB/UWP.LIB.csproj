@@ -112,6 +112,9 @@
     </Compile>
     <Compile Include="Controls\Button\ButtonViewModel.cs" />
     <Compile Include="Controls\Button\ButtonApiModel.cs" />
+    <Compile Include="Controls\Controls.xaml.cs">
+      <DependentUpon>Controls.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Button\IButtonApiModel.cs" />
     <Compile Include="Controls\TextBox\TextBoxApiModel.cs" />
     <Compile Include="Controls\TextBox\TextBoxTemplate.xaml.cs">
@@ -134,7 +137,6 @@
     <Page Include="Controls\Controls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
     <Page Include="Controls\TextBox\TextBoxTemplate.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -145,7 +147,7 @@
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
