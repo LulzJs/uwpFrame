@@ -123,6 +123,8 @@
     </Compile>
     <Compile Include="Controls\TextBox\TextBoxViewModel.cs" />
     <Compile Include="Controls\TextBox\ITextBoxApiModel.cs" />
+    <Compile Include="MemoryLeaks\LeakEvent.cs" />
+    <Compile Include="MemoryLeaks\OverrideLeak.cs" />
     <Compile Include="Mvvm\DelegateCommand.cs" />
     <Compile Include="Mvvm\DelegateCommandExetensions.cs" />
     <Compile Include="Mvvm\ViewModelBase.cs" />

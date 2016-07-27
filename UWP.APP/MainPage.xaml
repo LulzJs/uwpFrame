@@ -5,6 +5,13 @@
       xmlns:local="using:UWP.APP"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
-    <ItemsControl ItemsSource="{Binding Controls}">
-    </ItemsControl>
+    <Canvas>
+        <ListBox ItemsSource="{Binding Controls}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <ContentControl Content="{Binding}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Canvas>
 </Page>

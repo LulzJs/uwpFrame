@@ -5,10 +5,6 @@
     xmlns:local="using:UWP.APP"
     RequestedTheme="Light">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///UWP.LIB/Controls/Controls.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        <ResourceDictionary Source="ms-appx:///UWP.LIB/Controls/Controls.xaml" />
     </Application.Resources>
 </Application>
